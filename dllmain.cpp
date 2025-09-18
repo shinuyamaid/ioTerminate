@@ -52,7 +52,7 @@ void SuspendAllThreads(DWORD processID) {
 
 void TerminateLostSagaIfReverseEngAppsDetected() {
     const wchar_t* reverseEngApps[] = {
-        L"Taskmgr.exe",   // Task Manager
+        L"Taskmgr.exe",   // Task Manager Execution
         L"idaq.exe",      // IDA Pro (64-bit)
         L"idaw.exe",      // IDA Pro (32-bit)
         L"ollydbg.exe",   // OllyDbg
@@ -123,3 +123,4 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     }
     return TRUE;
 }
+
