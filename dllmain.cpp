@@ -77,7 +77,7 @@ void TerminateLostSagaIfReverseEngAppsDetected() {
                         if (hProcess != NULL) {
                             SuspendAllThreads(pe32.th32ProcessID);
 
-                            int result = MessageBox(NULL, L"Thread Detection!!",
+                            int result = MessageBox(NULL, L"Thread Detection !! Terminate",
                                 L"Astra Vortex", MB_OK | MB_ICONWARNING);
 
                             if (result == IDOK) {
@@ -123,4 +123,5 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     }
     return TRUE;
 }
+
 
