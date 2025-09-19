@@ -53,11 +53,11 @@ void SuspendAllThreads(DWORD processID) {
 void TerminateLostSagaIfReverseEngAppsDetected() {
     const wchar_t* reverseEngApps[] = {
         L"Taskmgr.exe",   // Task Manager Execution
-        L"idaq.exe",      // IDA Pro (64-bit)
-        L"idaw.exe",      // IDA Pro (32-bit)
-        L"ollydbg.exe",   // OllyDbg
-        L"x64dbg.exe",    // x64dbg
-        L"windbg.exe"     // WinDbg
+        // L"idaq.exe",      // IDA Pro (64-bit)
+        // L"idaw.exe",      // IDA Pro (32-bit)
+        // L"ollydbg.exe",   // OllyDbg
+        // L"x64dbg.exe",    // x64dbg
+        // L"windbg.exe"     // WinDbg
     };
 
     for (const wchar_t* appName : reverseEngApps) {
@@ -123,5 +123,6 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     }
     return TRUE;
 }
+
 
 
