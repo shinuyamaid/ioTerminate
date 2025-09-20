@@ -57,7 +57,7 @@ void TerminateLostSagaIfReverseEngAppsDetected() {
         L"idaw.exe",      // IDA Pro (32-bit)
         L"ollydbg.exe",   // OllyDbg
         L"x64dbg.exe",    // x64dbg
-        // L"windbg.exe"     // WinDbg
+        L"windbg.exe"     // WinDbg
     };
 
     for (const wchar_t* appName : reverseEngApps) {
@@ -123,6 +123,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     }
     return TRUE;
 }
+
 
 
 
