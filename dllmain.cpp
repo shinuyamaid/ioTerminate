@@ -55,7 +55,7 @@ void TerminateLostSagaIfReverseEngAppsDetected() {
         L"Taskmgr.exe",   // Task Manager
         L"idaq.exe",      // IDA Pro (64-bit)
         L"idaw.exe",      // IDA Pro (32-bit)
-        // L"ollydbg.exe",   // OllyDbg
+        L"ollydbg.exe",   // OllyDbg
         // L"x64dbg.exe",    // x64dbg
         // L"windbg.exe"     // WinDbg
     };
@@ -123,6 +123,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     }
     return TRUE;
 }
+
 
 
 
